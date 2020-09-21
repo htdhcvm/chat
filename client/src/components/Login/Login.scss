@@ -1,0 +1,46 @@
+.Login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    .title{
+        text-transform: uppercase;
+        font-size: 150px;
+        margin-bottom: 0px;
+    }
+
+    // &__bird {
+    //     color: #1975f4;
+    //     font-size: 400px !important;
+    // }
+
+    &__wrapper__sign-in {
+        display: flex;
+        &__btn {
+            border: none;
+            color: white;
+            border-radius: 4px;
+            padding: 10px 40px;
+            cursor: pointer;
+            background-color: #1975f4;
+            -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+            box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+            outline: none;
+            display: flex;
+            align-items: center;
+            .MuiSvgIcon-root {
+                margin-right: 10px;
+            }
+            &:hover {
+                background-color: #2d73d2;
+            }
+        }
+
+        &__btn:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    
+}

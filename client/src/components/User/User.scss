@@ -1,0 +1,30 @@
+.User {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &__text {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .MuiBadge-colorSecondary {
+        background-color: #4ed9cd;
+    }
+
+    h4 {
+        margin: 0px;
+    }
+
+    &:hover {
+        background-color: #f5f6f8;
+    }
+
+    .grey {
+        .MuiBadge-colorSecondary {
+            background-color: #e6ecf2 !important;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+
+.ListUsers {
+    background-color: white;
+    border-radius: 6px;
+    height: 100%;
+    position: relative;
+    &-title {
+        padding: 10px 20px;
+        font-weight: 700;
+    }
+
+    .footer {
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 0px;
+        .logout {
+            cursor: pointer;
+            display: block;
+        }
+    }
+}

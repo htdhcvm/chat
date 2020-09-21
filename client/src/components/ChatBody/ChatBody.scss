@@ -1,0 +1,66 @@
+.ChatBody{
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "messages"
+        "sender";
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 60px;
+
+    &__title {
+        grid-area: title;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__messages {
+        grid-area: messages;
+        overflow-y: scroll;
+        max-height: calc( 100vw);
+        padding: 0px 25px;
+        scrollbar-width: thin;
+        scrollbar-color: blue orange;
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+
+    &__sender {
+        grid-area: sender;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 6px;
+        padding: 0px 20px;
+        font-size: 16px;
+        &-input {
+            flex: 1;
+            height: 100%;
+            outline: none;
+            background-color: transparent;
+            border: none;
+        }
+        &-wrapper-icon {
+            cursor: pointer;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            width: 40px;
+            justify-content: center;
+            background-color: #3598db;
+            border-radius: 50%;
+            color: white;
+        }
+    }
+}

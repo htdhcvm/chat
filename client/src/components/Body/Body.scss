@@ -1,0 +1,15 @@
+.Body {
+    display: grid;
+    grid-template-areas: "ListUsers ChatBody";
+    grid-template-columns: 300px 1fr;
+    grid-gap: 20px;
+}
+
+.ListUsers {
+    // max-width: 300px;
+    grid-area: ListUsers;
+}
+
+.ChatBody { 
+    grid-area: ChatBody;
+}
